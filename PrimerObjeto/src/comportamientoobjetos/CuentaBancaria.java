@@ -1,12 +1,13 @@
 package comportamientoobjetos;
 
 public class CuentaBancaria {
-    public String CBU;
-    public String alias;
-    public double saldo;
+    private String CBU;
+    private String alias;
+    private double saldo;
+    private double prestamo = 100000;
 
     public void mostrarDatos(){
-        System.out.println(CBU + " " + alias + " " + saldo);
+        System.out.println(CBU + " " + alias + " " + saldo + " " + prestamo);
     }
     public double obtenerSaldo(){ // Todo metodo que devuelva un valor distinto a void, se debe ingresar un return
         return saldo;
@@ -16,7 +17,7 @@ public class CuentaBancaria {
             saldo += saldo + monto;
         }
     }
-    public boolean saldoDisponible(double monto){
+    private boolean saldoDisponible(double monto){
         return saldo >= monto;
     }
 
@@ -24,5 +25,15 @@ public class CuentaBancaria {
         if(saldoDisponible(monto)){
             saldo -= monto;
         }
+    }
+
+    public void establecerAlias(String nuevoAlias) {
+        if(nuevoAlias != null){
+            alias = nuevoAlias;
+        }
+    }
+
+    public String obtenerAlias(){
+        return alias;
     }
 }
