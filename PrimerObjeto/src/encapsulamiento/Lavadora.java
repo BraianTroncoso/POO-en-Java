@@ -50,4 +50,14 @@ public class Lavadora {
             System.out.println("Tu ropa está lista.");
         }
     }
+
+    // Setter y Getter
+
+    public int getTipoDeRopa(){
+        return tipoDeRopa;
+    }
+    public void setTipoDeRopa(int tipoDeRopa){
+        this.tipoDeRopa = tipoDeRopa;
+    }
+
 }
