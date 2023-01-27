@@ -1,4 +1,4 @@
-package clasesdepractica;
+package clasesdepractica.cuenta;
 
 public class CuentaApp {
 
