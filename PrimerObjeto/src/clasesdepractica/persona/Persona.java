@@ -136,13 +136,19 @@ public class Persona {
                 ", dni=" + dni +
                 '}';
     }
+
+    /*
+    Este es el ultimo metodo que tengo que crear, hasta ahora creo que estan todos creados
+    tengo que convertir los 8 numeros aleatorios en char aleatorios, estoy renegando con la logica
+    adjunto la WEB para seguir después.
+    https://www.discoduroderoer.es/ejercicios-propuestos-y-resueltos-programacion-orientado-a-objetos-java/
+    https://coding101.home.blog/2019/11/07/generar-letras-aleatorias-en-java/
+     */
     public double generaDNI(double dni, int codigoAscii){
         this.dni = dni;
         dni = (Math.random() * 0) + 8;
         dni = (int)Math.floor(Math.random()*(122 -
                 97)+97);
-
-
 
         return dni;
     }
