@@ -4,7 +4,7 @@ public class CuentaBancaria {
     private String CBU;
     private String alias;
     private double saldo;
-    private double prestamo = 100000;
+    private double prestamo = 10000;
 
     public void mostrarDatos(){
         System.out.println(CBU + " " + alias + " " + saldo + " " + prestamo);
